@@ -21,3 +21,22 @@ limitations under the License.
 """
 
 from .binlogstream import BinLogStreamReader
+from .window_report import (
+    CorrectableWindowReport,
+    WindowRecord,
+    Transaction,
+    Checkpoint,
+)
+
+__all__ = [
+    "BinLogStreamReader",
+    "CorrectableWindowReport",
+    "WindowReport",
+    "CDCWindowReport",
+    "WindowRecord",
+    "Transaction",
+    "Checkpoint",
+]
+
+WindowReport = CorrectableWindowReport
+CDCWindowReport = CorrectableWindowReport

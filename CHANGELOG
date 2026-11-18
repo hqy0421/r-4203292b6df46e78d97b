@@ -1,3 +1,12 @@
+Unreleased
+
+* Add correctable CDC window reports (``pymysqlreplication.window_report``):
+  windowed ``count_all`` and exact nullable integer sums over native row
+  events, MINIMAL row image reconstruction from the declared primary key,
+  corrections for group/time moves and deletes, explicit monotonic watermark
+  sealing, revisioned republication of sealed windows, atomic per-transaction
+  commits with a checkpoint, replay/reopen idempotency and snapshot persistence.
+
 1.0.16 12/07/2026
 
 * Parse FormatDescriptionEvent post-header lengths and use them to align event payloads.

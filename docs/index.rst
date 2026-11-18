@@ -29,6 +29,7 @@ Contents
     mysql57_support
     binlogstream
     events
+    window_report
     examples
     support
     developement
